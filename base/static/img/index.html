@@ -1,0 +1,492 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "{% static 'style.css' %}">
+    <script defer src= "{% static 'script.js' %}"></script>
+    <title>Living Message</title>
+</head>
+<body>
+    <div class = "page">
+        <header>
+
+            <div class="social-handle-container">
+                <div class="wrapper flex">
+                    <div class="location flex-group">
+                        <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" stroke="#f2f2f2">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier"> 
+                                <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#f2f2f2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> 
+                                <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#f2f2f2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path> 
+                            </g>
+                        </svg>
+                        <p class="address">684 West College ST. Sun City, USA</p>
+                    </div>
+    
+                    <div class="social-icons-div flex-group">
+                        <svg class = "facebook icon" fill="#f2f2f2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-337 273 123.5 256" xml:space="preserve" stroke="#f2f2f2">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier"> <path d="M-260.9,327.8c0-10.3,9.2-14,19.5-14c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3 c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H-337V396h26.5v133h49.6V396h39.3l2.9-38.3h-42.2V327.8z"></path> 
+                            </g>
+                        </svg>
+    
+                        <svg class = "instagram icon" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#f2f2f2" stroke="#f2f2f2">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier"> <title>instagram [#f2f2f2]</title> <desc>Created with Sketch.</desc> <defs> </defs> 
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#f2f2f2"> 
+                                        <g id="icons" transform="translate(56.000000, 160.000000)"> 
+                                            <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#f2f2f2]"> </path> 
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+    
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="linkedin icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" stroke="#f2f2f2">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd125aef"> 
+                                    <path style="display: inline; fill-rule: evenodd; clip-rule: evenodd;" d="M116.504,500.219V170.654H6.975v329.564H116.504 L116.504,500.219z M61.751,125.674c38.183,0,61.968-25.328,61.968-56.953c-0.722-32.328-23.785-56.941-61.252-56.941 C24.994,11.781,0.5,36.394,0.5,68.722c0,31.625,23.772,56.953,60.53,56.953H61.751L61.751,125.674z M177.124,500.219 c0,0,1.437-298.643,0-329.564H286.67v47.794h-0.727c14.404-22.49,40.354-55.533,99.44-55.533 c72.085,0,126.116,47.103,126.116,148.333v188.971H401.971V323.912c0-44.301-15.848-74.531-55.497-74.531 c-30.254,0-48.284,20.38-56.202,40.08c-2.897,7.012-3.602,16.861-3.602,26.711v184.047H177.124L177.124,500.219z"> </path> 
+                                </g> 
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <div class="wrapper">
+                    <div class="navbar flex">
+                        <div class="logo-container ">
+                            <span class="logo flex-group">Living Message <img src="/static/img/church-logo-adventista.png" alt="Logo image for the church" class="church-logo"></span>
+                        </div>
+        
+                        <ul class="nav-links-container flex">
+                            <li><a href="#" class="nav-links flex-group">HOME<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                            <li><a href="#" class="nav-links flex-group">PAGES<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                            <li><a href="#" class="nav-links flex-group">SERMONS<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                            <li><a href="#" class="nav-links flex-group">MINISTRIES<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                            <li><a href="#" class="nav-links flex-group">BLOG<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                            <li><a href="#" class="contact nav-links">CONTACT US</a></li>
+                        
+                        </ul>
+        
+                        <a class = "donate-link">DONATE</a>
+        
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="mobile-nav">
+                        <ul class="mobile-nav-links-container">
+                            <li><a href="#" class="nav-links">HOME<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                            <li><a href="#" class="nav-links">PAGES<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                            <li><a href="#" class="nav-links">SERMONS<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                            <li><a href="#" class="nav-links">MINISTRIES<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                            <li><a href="#" class="nav-links">BLOGS<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class = "banner-section">
+                <div class="wrapper flex-content">
+                    <div class="content">
+                        <img class = "dove-icon" src = "/static/img/dove-icon.svg" alt ="dove icon">
+                        <span class ="content-span">WE HELP YOU GET THINGS DONE</span>
+                        <h2 class = "head-text">GOD GIVES US POWER</h2>
+                        <p class = "banner-details">
+                            Our mission is to cleanse people heart from sin and fill the individual with the love
+                            of GOD. Give a try to ZEGEN the BEST CHURCH WORDPRESS THEME.
+                        </p>
+                        <a href = "#" class = "enquiry-link">Enquiry Now</a>
+                    </div>
+                    <div class="img-div flex-center">
+                        <?xml version="1.0" encoding="utf-8"?>
+
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <?xml version="1.0" encoding="utf-8"?>
+
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="header-banner-cross" height="500px" width="500px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                             viewBox="0 0 512 512"  xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:#a81313;}
+                            </style>
+                            <g>
+                                <path class="st0" d="M446.503,141.994H320.017V0H192.015v141.994H49.497v128.01h142.518V512h128.002V269.996l142.486,0.008v-128.01
+                                    H446.503z M430.503,237.996H288.017V480h-64.001V237.996H81.497v-64.001h142.518V31.992h64.001v142.002h142.486V237.996z"/>
+                            </g>
+                        </svg>
+                        <img class = "banner-img" src="/static/img/man-suit-photo.png" alt="Picture of a man on suit smiling to the camera">
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        <main>
+            <section class="info-section">
+                <div class="wrapper flex-wrap">
+                    <div class="sermon info-card-container">
+                        <div class= "sermon card">
+                            <span class="flex-center  icon-span">
+                                <img class = "crown-icon" src="/static/img/crown-icon.svg" alt="" class="crown-icon">
+                            </span>
+        
+                            <h4 class = "sermon info-card-head">Our Sermons</h4>
+        
+                            <p class = "sermon info-card-text">
+                                We impact Biblical Principles in a practical and
+                                modern style.
+                            </p>
+        
+                            <a href = "#" class = "sermon view-more">View More</a>
+                        </div>
+                    </div>
+    
+                    <div class= "donation card">
+                        <h4 class= "donation-head-text">Help us to make a difference</h4>
+                        <div class = "amount-div flex">
+                            <span class="amount-span">$2,000.00</span>
+                            <span class="amount-span">$4,000.00</span>   
+                        </div>    
+                        <form class= "donate-form">
+                            <label>Custom amount</label>
+                            <input class = "donate-input" type="text">
+                        </form>
+
+                        <button class="donate-btn">Donate</button>
+                        
+                    </div>
+    
+                    <div class= "enquiry info-card-container">
+                        <div class= "enquiry card">
+                            <span class="flex-center icon-span">
+                                <img class = "earphone-icon" src="/static/img/earphone-icon.svg" alt="" class="earphone-icon">
+                            </span>
+        
+                            <h4 class = "enquiry info-card-head">Our Sermons</h4>
+        
+                            <p class = "enquiry info-card-text">
+                                We impact Biblical Principles in a practical and
+                                modern style.
+                            </p>
+        
+                            <a href = "#" class = "enquiry view-more">View More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class = "about-section">
+                <div class = "wrapper flex-content">
+                    <div class="content">
+                        <span class="content-span">ABOUT US</span>
+                        <h3 class = "sub-head">We are Taking Small Steps to Make
+                            Earth Better Planet
+                        </h3>
+                        <span class = "dash-span"></span>
+                        <span class = "quote-span">
+                            "World belongs to humanity, not this leader,
+                            that leader or that king or prince or religious 
+                            leader. World belongs to humanity"
+                        </span>
+
+                        <span class = "attr-span">-DALAI LAMA</span>
+                    </div>
+                    <div class="img-div">
+                        <img src="/static/img/church-building.jpg" alt="A church building" class="about-img">
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery-section">
+                <div class="gallery-section head-div">
+                    <span class="content-span">GALLERY</span>
+                    <h4 class="gallery sub-head">Our Galleryx</h4>
+                    <span class="dash-span"></span>
+                </div>
+
+                <div class="scroll-btn-container flex-group">
+                    <button class="scroll-btn prev flex-center">
+                        <img src="/static/img/arrow-icon.svg" alt="" class="prev-icon">
+                    </button>
+                    <button class="scroll-btn next flex-center">
+                        <img src="/static/img/arrow-icon.svg" alt="" class="next-icon">
+                    </button>
+                </div>
+
+                <div class="gallery-img-container flex-scroll">
+                    <img src="/static/img/church-passage.jpg" alt="" class="gallery-img">
+                    <img src="/static/img/hands-in-prayer.jpg" alt="" class="gallery-img">
+                    <img src="/static/img/Hands folded Praying on a Holy Bible.jpg" alt="" class="gallery-img">
+                    <img src="/static/img/catholic-women.jpg" alt="" class="gallery-img">
+                </div>
+                
+            </section>
+
+            <section class="upcoming-events-section">
+                <div class = "wrapper">
+                    <div class = "upcoming-event head-div">
+                        <span class="content-span">EVENTS</span>
+                        <h4 class="upcoming-events sub-head">Upcoming Events</h4>
+                        <span class="dash-span"></span>
+                    </div>
+
+                    <div class="event-card-container grid">
+                        <div class="event-card">
+                            <img src="/static/img/event-with-food.jpg" alt="" class="event-card-img">
+                            
+                            <div class="content-wrapper">
+                                <div class = "date-div">
+                                    <div class="date-sub-div">
+                                        <span class = "location-icon-span flex-center">
+                                            <img src="/static/img/clock-icon.svg" alt="" class="clock-icon-img">
+                                        </span>
+                                        
+                                        <span class="date-span">Dec 18</span>
+                                    </div>
+    
+                                    <div class = "time-div">
+                                        11.00 am
+                                    </div>
+                                </div>
+    
+                                <h4 class ="small-head">Event: Sharing our Faith & Love to children</h4>
+    
+                                <a href="$" class="event details-link">Event Details</a>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <img src="/static/img/people-in-church.jpg" alt="" class="event-card-img">
+                            <div class="content-wrapper">
+                                <div class = "date-div">
+                                    <div class="date-sub-div">
+                                        <span class = "location-icon-span flex-center">
+                                            <img src="/static/img/clock-icon.svg" alt="" class="clock-icon-img">
+                                        </span>
+                                        
+                                        <span class="date-span">Dec 18</span>
+                                    </div>
+    
+                                    <div class = "time-div">
+                                        11.00 am
+                                    </div>
+                                </div>
+    
+                                <h4 class = "small-head">Event: Sharing our Faith and Love to children</h4>
+    
+                                <a href="$" class="event details-link">Event Details</a>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <img src="/static/img/some-people-church.jpg" alt="" class="event-card-img">
+                            <div class="content-wrapper">
+                                <div class = "date-div">
+                                    <div class="date-sub-div">
+                                        <span class = "location-icon-span flex-center">
+                                            <img src="/static/img/clock-icon.svg" alt="" class="clock-icon-img">            
+                                        </span>
+                                        
+                                        <span class="date-span">Dec 18</span>
+                                    </div>
+    
+                                    <div class = "time-div">
+                                        11.00 am
+                                    </div>
+                                </div>
+    
+                                <h4 class ="small-head">Event: Sharing our Faith and Love to children</h4>
+    
+                                <a href="$" class="event details-link">Event Details</a>
+    
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog-section">
+                <div class="wrapper">
+                    <div class="blog-section head-div">
+                        <span class="content-span">OUR Blog</span>
+                        <h4 class="gallery sub-head">Latest Posts</h4>
+                        <span class="dash-span"></span>
+                    </div>
+
+                    <div class="scroll-btn-container flex-group">
+                        <button class="scroll-btn prev flex-center">
+                            <img src="/static/img/arrow-icon.svg" alt="" class="prev-icon">
+                        </button>
+                        <button class="scroll-btn next flex-center">
+                            <img src="/static/img/arrow-icon.svg" alt="" class="next-icon">
+                        </button>
+                    </div>
+
+                    <div class="blogs-container flex-scroll">
+                        <div class ="blog flex-wrap">
+                            <img class = "blog-img" src = "/static/img/woman-praying.jpg" alt = "Woman praying in the Church"/>
+                            <div class = "blog-content-wrapper">
+                                <div class= "headline-date flex-group">
+                                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 10V7C20 5.89543 19.1046 5 18 5H6C4.89543 5 4 5.89543 4 7V10M20 10V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V10M20 10H4M8 3V7M16 3V7" stroke="hsl(0,0%,80%)" stroke-width="2" stroke-linecap="round"/>
+                                        <rect x="6" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
+                                        <rect x="10.5" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
+                                        <rect x="15" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
+                                    </svg>
+                                    <span>OCT 25, 2019</span>
+                                </div>
+
+                                <h4 class = "small-head">Help End the Water Crisis for Families</h4>
+
+                                <p class="info-card-text">
+                                    Together with our thousands of partners around the world, we have
+                                </p>
+
+                                <a href="$" class="event details-link">Event Details</a>
+
+                            </div>
+                        </div>
+
+                        <div class ="blog flex-wrap">
+                            <img class = "blog-img" src = "/static/img/woman-praying.jpg" alt = "Woman praying in the Church"/>
+                            <div class = "blog-content-wrapper">
+                                <div class= "headline-date flex-group">
+                                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 10V7C20 5.89543 19.1046 5 18 5H6C4.89543 5 4 5.89543 4 7V10M20 10V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V10M20 10H4M8 3V7M16 3V7" stroke="hsl(0,0%,80%)" stroke-width="2" stroke-linecap="round"/>
+                                        <rect x="6" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
+                                        <rect x="10.5" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
+                                        <rect x="15" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
+                                    </svg>
+                                    <span>OCT 25, 2019</span>
+                                </div>
+
+                                <h4 class = "small-head">Giving Back - Uganda Training Centers</h4>
+
+                                <p class="info-card-text">
+                                    Our Motto is Love GOD! Love People!
+                                    Our Mission is to
+                                </p>
+
+                                <a href="$" class="event details-link">Event Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-content-container">
+                <div class="wrapper grid">
+              
+                        <div class="footer-about">
+                            <div class="footer-content-head">
+                                <span></span>
+                                <h4 class= "small-head">About Living Message</h4>
+                            </div>
+    
+                            <p class = "footer-content-details">
+                                Zegen Church Wordpress theme is designed for non-profit
+                                church, modern church, prayer group, christian, charity,
+                                non-profit organisation, Grab it soon!
+                            </p>
+    
+                            <div class="footer-social-container flex">
+                                <div class="facebook footer-social">
+                                    <img src="/static/img/facebook.svg" alt="facebook social media icon" class="footer-social-img">
+                                </div>
+                                <div class="twitter footer-social">
+                                    <img src="/static/img/twitter-icon.svg" alt="twitter social media icon" class="footer-social-img">
+                                </div>
+                                <div class="pinterest footer-social">
+                                    <img src="/static/img/pinterest-icon.svg" alt="pinterest social media icon" class="footer-social-img">
+                                </div>
+                                <div class="instagram footer-social">
+                                    <img src="/static/img/footer-instagram-icon.svg" alt="instagram social media icon" class="footer-social-img">
+                                </div>
+                                <div class="youtube footer-social">
+                                    <img src="/static/img/youtube-icon.svg" alt="youtube social media icon" class="footer-social-img">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="footer-quick-link">
+                            <div class="footer-content-head">
+                                <span></span>
+                                <h4 class= "small-head">Quick Links</h4>
+                            </div>
+    
+                            <ul class="quick-links-container">
+                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#" class="quick-link">Who we are?</a></li>
+                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#" class="quick-link">Support and FAQ's</a></li>
+                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#" class="quick-link">Payments</a></li>
+                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#" class="quick-link">Donations Terms</a></li>
+                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#" class="quick-link">Volunteer</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer-latest-news">
+
+                            <div class="footer-content-head">
+                                <span></span>
+                                <h4 class= "small-head">Latest News</h4>
+                            </div>
+
+                            <a class="news flex">
+                                <img src="/static/img/church-passage.jpg" alt="" class="news-banner-img">
+                                <div class="news-content-wrapper">
+                                    <h4 class="footer-subhead">Giving Back - Uganda Training Centers</h4>
+                                    <span class= "news-date-span flex-group"><img src="/static/img/footer-date-icon.svg" alt="" class="date-icon">Oct 21, 2019</span>
+                                </div>
+                            </a>
+
+                            <a class="news flex">
+                                <img src="/static/img/some-people-church.jpg" alt="" class="news-banner-img">
+                                <div class="news-content-wrapper">
+                                    <h4 class="footer-subhead">Giving Back - Uganda Training Centers</h4>
+                                    <span class = "news-date-span flex-group"><img src="/static/img/footer-date-icon.svg" alt="" class="date-icon">Oct 21, 2019</span>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="footer-newsletter">
+                            <div class="footer-content-head">
+                                <span></span>
+                                <h4 class= "small-head">Newsletter</h4>
+                            </div>
+    
+                            <p class = "footer-content-details">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Harum molestias in unde nostrum a, quaerat facere laborum
+                                commodi quod iste dolore obcaecati  
+                              
+                            </p>
+    
+                            <div class="newsletter-input-div flex-group">
+                                <input type="text" placeholder="Email Address" class= "newsletter-input">
+                                <button class= "newsletter-btn">Sign Up</button>
+                            </div>
+                        </div>
+                   
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
