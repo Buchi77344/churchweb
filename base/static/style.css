@@ -265,7 +265,7 @@ nav .wrapper{
     gap : 4px;
     width : 50px;
     height : 50px;
-
+    cursor: pointer;
 }
 
 .hamburger span{
@@ -1035,9 +1035,14 @@ main section{
         height : 30px;
     }
 
+    .logo-text{
+        width: min-content;
+    }
+
+
     .donate-link{
         padding: 5px 10px;
-        margin: 0 10px 0 20px;
+        margin: 0 10px 0 auto;
         border-radius: var(--br-5);
     }
 }
