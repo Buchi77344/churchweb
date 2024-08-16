@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <script defer src= "{% static 'script.js' %}"></script>
     <title>Living Message</title>
 </head>
@@ -24,7 +28,7 @@
                                 </path> 
                             </g>
                         </svg>
-                        <p class="address">684 West College ST. Sun City, USA</p>
+                        <p class="address">68 Ikoya road, Okitipupa, Ondo, Nigeria</p>
                     </div>
     
                     <div class="social-icons-div flex-group">
@@ -66,16 +70,15 @@
                         </div>
         
                         <ul class="nav-links-container flex">
-                            <li><a href="#" class="nav-links flex-group">HOMES<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
-                            <li><a href="#" class="nav-links flex-group">PAGES<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
-                            <li><a href="#" class="nav-links flex-group">SERMONS<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
-                            <li><a href="#" class="nav-links flex-group">MINISTRIES<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
-                            <li><a href="#" class="nav-links flex-group">BLOG<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                            <li><a href="/" class="nav-links flex-group">HOMES<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                            <li><a href="#services" class="nav-links flex-group">SERVICES<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                            <li><a href="#officials" class="nav-links flex-group">OFFICIALS<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
+                            <li><a href="#about" class="nav-links flex-group">ABOUT US<img src="/static/img/cross-icon.svg" alt="cross icon" class="cross-icon"></a></li>
                             <li><a href="#" class="contact nav-links">CONTACT US</a></li>
                         
                         </ul>
         
-                        <a class = "donate-link">DONATE</a>
+                        <a class = "subscribe-link" href = "">Subscribe</a>
         
                         <div class="hamburger">
                             <span></span>
@@ -86,19 +89,17 @@
 
                     <div class="mobile-nav">
                         <ul class="mobile-nav-links-container">
-                            <li><a href="#" class="nav-links">HOMES</a></li>
-                            <li><a href="#" class="nav-links">PAGES</a></li>
-                            <li><a href="#" class="nav-links">SERMONS</a></li>
-                            <li><a href="#" class="nav-links">MINISTRIES</a></li>
-                            <li><a href="#" class="nav-links">BLOG</a></li>
-                            <li><a href="#" class="nav-links">CONTACT US</a></li>
+                            <li><a href="/" class="nav-links flex-group">HOMES</a></li>
+                            <li><a href="#services" class="nav-links flex-group">SERVICES</a></li>
+                            <li><a href="#officials" class="nav-links flex-group">OFFICIALS</a></li>
+                            <li><a href="#about" class="nav-links flex-group">ABOUT US</a></li>
+                            <li><a href="#" class="contact nav-links">CONTACT US</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
           
-
             <div class = "banner-section">
                 <div class="wrapper flex-content">
                     <div class="content">
@@ -109,7 +110,7 @@
                             Our mission is to cleanse people heart from sin and fill the individual with the love
                             of GOD. Give a try to ZEGEN the BEST CHURCH WORDPRESS THEME.
                         </p>
-                        <a href = "#" class = "enquiry-link">Enquiry Now</a>
+                        <a href = "https://wa.me/2347030832966" class = "enquiry-link">Enquiry Now</a>
                     </div>
                     <div class="img-div flex-center">
                         <?xml version="1.0" encoding="utf-8"?>
@@ -135,8 +136,9 @@
                 </div>
             </div>
         </header>
+
         <main>
-            <section class="info-section">
+            <section id = "services" class="info-section">
                 <div class="wrapper flex-wrap">
                     <div class="sermon info-card-container">
                         <div class= "sermon card">
@@ -144,30 +146,13 @@
                                 <img class = "crown-icon" src="/static/img/crown-icon.svg" alt="" class="crown-icon">
                             </span>
         
-                            <h4 class = "sermon info-card-head">Our Sermons</h4>
+                            <h4 class = "sermon info-card-head">Bible Study</h4>
         
                             <p class = "sermon info-card-text">
-                                We impact Biblical Principles in a practical and
-                                modern style.
+                               Tuesday, Bible Study by 6pm
                             </p>
         
-                            <a href = "#" class = "sermon view-more">View More</a>
                         </div>
-                    </div>
-    
-                    <div class= "donation card">
-                        <h4 class= "donation-head-text">Help us to make a difference</h4>
-                        <div class = "amount-div flex">
-                            <span class="amount-span">$2,000.00</span>
-                            <span class="amount-span">$4,000.00</span>   
-                        </div>    
-                        <form class= "donate-form">
-                            <label>Custom amount</label>
-                            <input class = "donate-input" type="text">
-                        </form>
-
-                        <button class="donate-btn">Donate</button>
-                        
                     </div>
     
                     <div class= "enquiry info-card-container">
@@ -176,25 +161,38 @@
                                 <img class = "earphone-icon" src="/static/img/earphone-icon.svg" alt="" class="earphone-icon">
                             </span>
         
-                            <h4 class = "enquiry info-card-head">Our Sermons</h4>
+                            <h4 class = "enquiry info-card-head">Prayer Meeting</h4>
         
                             <p class = "enquiry info-card-text">
-                                We impact Biblical Principles in a practical and
-                                modern style.
+                               Thursday, Prayer Meeting by 6pm
                             </p>
         
-                            <a href = "#" class = "enquiry view-more">View More</a>
+                        </div>
+                    </div>
+    
+                    <div class= "enquiry info-card-container">
+                        <div class= "enquiry card">
+                            <span class="flex-center icon-span">
+                                <img class = "earphone-icon" src="/static/img/earphone-icon.svg" alt="" class="earphone-icon">
+                            </span>
+        
+                            <h4 class = "enquiry info-card-head">Vigil</h4>
+        
+                            <p class = "enquiry info-card-text">
+                               Every 3rd Friday of each month, Vigil by 11pm 
+                            </p>
+        
                         </div>
                     </div>
 
                 </div>
             </section>
 
-            <section class = "about-section">
+            <section id = "about" class = "about-section">
                 <div class = "wrapper flex-content">
                     <div class="content">
-                        <span class="content-span">ABOUT US</span>
-                        <h3 class = "sub-head">We are Taking Small Steps to Make
+                        <h3 class="about-content-head">ABOUT US</h3>
+                        <!-- <h3 class = "sub-head">We are Taking Small Steps to Make
                             Earth Better Planet
                         </h3>
                         <span class = "dash-span"></span>
@@ -202,9 +200,34 @@
                             "World belongs to humanity, not this leader,
                             that leader or that king or prince or religious 
                             leader. World belongs to humanity"
-                        </span>
+                        </span> -->
 
-                        <span class = "attr-span">-DALAI LAMA</span>
+                        <p class = "history-text"><span>Brief History: </span>
+                            This church started her first Sunday fellowship on 23rd, May 2004,
+                            it was formally commissioned by my spiritual father 
+                            APOSTLE DR ENOCH OLANIYI ILEMOBAYO the founder of WORLD 
+                            CHANGER CHURCH,from Lagos In October 2014.
+                            The church became incorporated February 2019,
+                            we thank God for what we have been through and what God is
+                             doing now and what He will be doing in Continuation.
+                        </p>
+
+                        <p class = "history-text"><span>Vision Statement:</span>
+                            Delivering human souls from the sick bed of
+                             destruction by teaching and applying the power 
+                             in the finished work of Christ.
+
+                        </p>
+
+                        <p class = "history-text"><span>Mission Statement:</span>
+                            Reaching out to the whole world through 
+                            the message of Grace and Hope,and causing people 
+                            to understand God's 
+                            endless love and the Reality of His Kingdom.
+
+                        </p>
+
+                        <!-- <span class = "attr-span">-DALAI LAMA</span> -->
                     </div>
                     <div class="img-div">
                         <img src="/static/img/church-building.jpg" alt="A church building" class="about-img">
@@ -229,10 +252,14 @@
                 </div>
 
                 <div class="gallery-img-container flex-scroll">
+                    <img class = "gallery-img officials-img" src = "/static/img/pastor-person.jpg" alt = "Pastor of the Picture"/>
+                    <div class = "gallery-img officials-img-div">
+                        <img class = "officials-img" src = "/static/img/Deacon-person-rbg.png" alt = "Deacon in the Church Picture"/>
+                    </div>
                     <img src="/static/img/church-passage.jpg" alt="" class="gallery-img">
                     <img src="/static/img/hands-in-prayer.jpg" alt="" class="gallery-img">
                     <img src="/static/img/Hands folded Praying on a Holy Bible.jpg" alt="" class="gallery-img">
-                    <img src="/static/img/catholic-women.jpg" alt="" class="gallery-img">
+
                 </div>
                 
             </section>
@@ -264,9 +291,8 @@
                                     </div>
                                 </div>
     
-                                <h4 class ="small-head">Event: Sharing our Faith & Love to children</h4>
+                                <h4 class ="small-head">Event: ThanksGiving Service</h4>
     
-                                <a href="$" class="event details-link">Event Details</a>
                             </div>
                         </div>
 
@@ -287,9 +313,8 @@
                                     </div>
                                 </div>
     
-                                <h4 class = "small-head">Event: Sharing our Faith and Love to children</h4>
+                                <h4 class = "small-head">Event: Hours Of Prayer</h4>
     
-                                <a href="$" class="event details-link">Event Details</a>
                             </div>
                         </div>
 
@@ -310,9 +335,8 @@
                                     </div>
                                 </div>
     
-                                <h4 class ="small-head">Event: Sharing our Faith and Love to children</h4>
+                                <h4 class ="small-head">Event: Deliverance Service</h4>
     
-                                <a href="$" class="event details-link">Event Details</a>
     
                             </div>
                             
@@ -321,11 +345,11 @@
                 </div>
             </section>
 
-            <section class="blog-section">
+            <section id = "officials"class="officials-section">
                 <div class="wrapper">
-                    <div class="blog-section head-div">
-                        <span class="content-span">OUR Blog</span>
-                        <h4 class="gallery sub-head">Latest Posts</h4>
+                    <div class="officials-section head-div">
+                        <!-- <span class="content-span">OUR officials</span> -->
+                        <h4 class="gallery sub-head">OUR OFFICIALS</h4>
                         <span class="dash-span"></span>
                     </div>
 
@@ -338,44 +362,70 @@
                         </button>
                     </div>
 
-                    <div class="blogs-container flex-scroll">
-                        <div class ="blog flex-wrap">
-                            <img class = "blog-img" src = "/static/img/woman-praying.jpg" alt = "Woman praying in the Church"/>
-                            <div class = "blog-content-wrapper">
+                    <div class="officials-container flex-scroll">
+                        <div class ="officials flex-wrap">
+                            <img class = "officials-img" src = "/static/img/pastor-person.jpg" alt = "Pastor of the Picture"/>
+                            <div class = "officials-content-wrapper">
                                 <div class= "headline-date flex-group">
-                                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                    <!-- <?xml version="1.0" encoding="utf-8"?>Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools
                                     <svg width="20px" height="20px" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20 10V7C20 5.89543 19.1046 5 18 5H6C4.89543 5 4 5.89543 4 7V10M20 10V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V10M20 10H4M8 3V7M16 3V7" stroke="hsl(0,0%,80%)" stroke-width="2" stroke-linecap="round"/>
                                         <rect x="6" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
                                         <rect x="10.5" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
                                         <rect x="15" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
-                                    </svg>
-                                    <span>OCT 25, 2019</span>
+                                    </svg> -->
+                                    <span>PASTOR</span>
                                 </div>
 
-                                <h4 class = "small-head">Help End the Water Crisis for Families</h4>
+                                <h4 class = "small-head">REV KENNEDY GODWIN LAWRENCE President & Founder </h4>
 
                                 <p class="info-card-text">
-                                    Together with our thousands of partners around the world, we have
+                                    THE TABERNACLE OF LIVING MESSAGE ASSEMBLY WORLDWIDE
                                 </p>
 
-                                <a href="$" class="event details-link">Event Details</a>
 
                             </div>
                         </div>
 
-                        <div class ="blog flex-wrap">
-                            <img class = "blog-img" src = "/static/img/woman-praying.jpg" alt = "Woman praying in the Church"/>
-                            <div class = "blog-content-wrapper">
+                        <div class ="officials flex-wrap">
+                            <div class = "officials-img-div">
+                                <img class = "officials-img" src = "/static/img/Deacon-person-rbg.png" alt = "Deacon in the Church Picture"/>
+                            </div>
+                            <div class = "officials-content-wrapper">
                                 <div class= "headline-date flex-group">
-                                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- <?xml version="1.0" encoding="utf-8"?>Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                    <!-- <svg width="20px" height="20px" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20 10V7C20 5.89543 19.1046 5 18 5H6C4.89543 5 4 5.89543 4 7V10M20 10V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V10M20 10H4M8 3V7M16 3V7" stroke="hsl(0,0%,80%)" stroke-width="2" stroke-linecap="round"/>
                                         <rect x="6" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
                                         <rect x="10.5" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
                                         <rect x="15" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
-                                    </svg>
-                                    <span>OCT 25, 2019</span>
+                                    </svg> -->
+                                    <span>DEACON</span>
+                                </div>
+
+                                <h4 class = "small-head"> Akinwalere Oluwadare Theophilus
+                                </h4>
+
+                                <p class="info-card-text">
+                                    THE TABERNACLE OF LIVING MESSAGE ASSEMBLY WORLDWIDE
+                                </p>
+
+
+                            </div>
+                        </div>
+
+                        <div class ="officials flex-wrap">
+                            <img class = "officials-img" src = "/static/img/woman-praying.jpg" alt = "Woman praying in the Church"/>
+                            <div class = "officials-content-wrapper">
+                                <div class= "headline-date flex-group">
+                                    <!-- <?xml version="1.0" encoding="utf-8"?>Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                    <!-- <svg width="20px" height="20px" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 10V7C20 5.89543 19.1046 5 18 5H6C4.89543 5 4 5.89543 4 7V10M20 10V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V10M20 10H4M8 3V7M16 3V7" stroke="hsl(0,0%,80%)" stroke-width="2" stroke-linecap="round"/>
+                                        <rect x="6" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
+                                        <rect x="10.5" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
+                                        <rect x="15" y="12" width="3" height="3" rx="0.5" fill="transparent"/>
+                                    </svg> -->
+                                    <span>ELDER</span>
                                 </div>
 
                                 <h4 class = "small-head">Giving Back - Uganda Training Centers</h4>
@@ -404,26 +454,19 @@
                             </div>
     
                             <p class = "footer-content-details">
-                                Zegen Church Wordpress theme is designed for non-profit
-                                church, modern church, prayer group, christian, charity,
-                                non-profit organisation, Grab it soon!
+                                Founded in May 2004, our church was 
+                                commissioned in 2014 and incorporated in
+                                 2019. We thank God for His continued guidance and blessings.
+
                             </p>
     
                             <div class="footer-social-container flex">
-                                <div class="facebook footer-social">
-                                    <img src="/static/img/facebook.svg" alt="facebook social media icon" class="footer-social-img">
+                                <div class="whatsapp footer-social">
+                                    <img src="/static/img/whatsapp-icon.svg" alt="facebook social media icon" class="footer-social-img">
                                 </div>
-                                <div class="twitter footer-social">
-                                    <img src="/static/img/twitter-icon.svg" alt="twitter social media icon" class="footer-social-img">
-                                </div>
-                                <div class="pinterest footer-social">
-                                    <img src="/static/img/pinterest-icon.svg" alt="pinterest social media icon" class="footer-social-img">
-                                </div>
-                                <div class="instagram footer-social">
-                                    <img src="/static/img/footer-instagram-icon.svg" alt="instagram social media icon" class="footer-social-img">
-                                </div>
-                                <div class="youtube footer-social">
-                                    <img src="/static/img/youtube-icon.svg" alt="youtube social media icon" class="footer-social-img">
+                               
+                                <div class="mail footer-social">
+                                    <img src="/static/img/email-icon.svg" alt="pinterest social media icon" class="footer-social-img">
                                 </div>
                             </div>
                         </div>
@@ -435,15 +478,15 @@
                             </div>
     
                             <ul class="quick-links-container">
-                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#" class="quick-link">Who we are?</a></li>
-                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#" class="quick-link">Support and FAQ's</a></li>
-                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#" class="quick-link">Payments</a></li>
-                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#" class="quick-link">Donations Terms</a></li>
-                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#" class="quick-link">Volunteer</a></li>
+                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="/" class="quick-link">HOMES</a></li>
+                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#services" class="quick-link">SERVICES</a></li>
+                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#officials" class="quick-link">OFFICIALS</a></li>
+                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#about" class="quick-link">ABOUT US</a></li>
+                                <li><img src="/static/img/star_not-filled.svg" alt="star icon" class="quick-link-star"><a href="#" class="quick-link">CONTACT US</a></li>
                             </ul>
                         </div>
     
-                        <div class="footer-latest-news">
+                        <!-- <div class="footer-latest-news">
 
                             <div class="footer-content-head">
                                 <span></span>
@@ -465,7 +508,7 @@
                                     <span class = "news-date-span flex-group"><img src="/static/img/footer-date-icon.svg" alt="" class="date-icon">Oct 21, 2019</span>
                                 </div>
                             </a>
-                        </div>
+                        </div> -->
     
                         <div class="footer-newsletter">
                             <div class="footer-content-head">
@@ -474,9 +517,9 @@
                             </div>
     
                             <p class = "footer-content-details">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Harum molestias in unde nostrum a, quaerat facere laborum
-                                commodi quod iste dolore obcaecati  
+                                Subscribe to our newsletter and 
+                                receive weekly updates, inspirational messages,
+                                 and news about upcoming events.
                               
                             </p>
     

@@ -3,7 +3,8 @@
 }
 
 :root{
-    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    --font-family: "Poppins", sans-serif;
     --dark-text-clr : hsl(285, 20%, 4%);
     --mid-dark-text-clr : hsl(286, 19%, 14%);
     --light-theme-clr : hsl(263, 21%, 29%);
@@ -31,12 +32,16 @@
     --footer-mt: 25px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin : 0;
     padding : 0;
     background-color: hsl(0,0%,80%);
     font-family: var(--font-family);
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .wrapper{
@@ -233,7 +238,7 @@ nav .wrapper{
     gap: 5px;
 }
 
-.donate-link{
+.subscribe-link{
     color : var(--light-text-clr-80);
     background-color: var(--light-theme-clr);
     padding : 12px 15px;
@@ -393,27 +398,28 @@ main section{
 
 .info-section .wrapper{
     background-color: var(--mid-dark-theme-clr);
-    
+    padding : 10px 0;
 }
 
 .info-section .wrapper.flex-wrap{
     align-items: stretch;
     justify-content: center;
+    gap: 10px;
 }
 
 .info-section .wrapper > div{
-    width: calc(100% / 3);
+    width: 32%;
     min-width: min(95%, 300px);
 }
 
 .info-section .card{
     padding : 40px 20px;
-
+    height : 100%;
 }
 
-.info-card-container{
+/* .info-card-container{
     padding : 10px;
-}
+} */
 
 .sermon.card,
 .enquiry.card{
@@ -504,6 +510,10 @@ main section{
     font-size: var(--text-sz);
 }
 
+.about-section .wrapper.flex-content{
+    align-items : flex-start
+}
+
 .about-section .content{
     width : 45%;
 }
@@ -518,11 +528,28 @@ main section{
 }
 
 .about-section .img-div img{
-    height : 450px;
+    height : 500px;
     width : 90%;
     object-fit: cover;
     object-position: 30% 80%;
 }
+
+.about-content-head{
+    font-size: 2.4rem;
+    font-weight : bold;
+    color : var(--theme-clr);
+    margin-block: 0px 5px;
+}
+
+.history-text{
+    font-size: 1rem;
+}
+
+.history-text span{
+    font-weight: bold;
+    font-size : 1.8rem;
+}
+
 .sub-head{
     font-size : var(--sub-head-text-sz);
     line-height: 1.2;
@@ -705,29 +732,47 @@ main section{
     height : 30px;
 }
 
-.blogs-container.flex-wrap{
+.officials-container{
+    scrollbar-width: none;
+}
+
+.officials-container.flex-wrap{
     justify-content: space-between;
 }
 
-.blog{
+.officials-container::-webkit-scrollbar{
+    width : 0;
+    height : 0;
+}
+
+.officials{
     width : 47%;
-    min-width : 400px;
+    min-width : 550px;
     /* flex: 1; */
 }
 
-.blog.flex-wrap{
+.officials.flex-wrap{
     justify-content: space-between;
 
 }
 
-.blog-img{
+.officials-img-div{
+    background-color: hsl(0,0%,87%);
+}
+
+.officials-img-div .officials-img{
+    width : 100%;
+    mix-blend-mode: darken;
+}
+
+.officials-img{
     width : 45%;
     height : 250px;
     object-fit: cover;
     object-position: center;
 }
 
-.blog-content-wrapper{
+.officials-content-wrapper{
     width : 50%;
     padding : 20px 0; 
 }
@@ -735,7 +780,7 @@ main section{
 .headline-date{
     padding : 5px 15px;
     background-color: var(--theme-clr);
-    color: var(--light-text-clr-80);
+    color: hsl(0,0%,90%);
     width : fit-content;
     border-radius: var(--br-5);
 }
@@ -795,6 +840,12 @@ main section{
     padding : 0 15px;
 }
 
+.footer-quick-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer-content-details{
     margin-block : var(--footer-mt);
     line-height: 1.6;
@@ -810,29 +861,22 @@ main section{
     display: flex;
     align-items: center;
     justify-content: center;
-    width : 40px;
-    height : 40px;
+    width : 45px;
+    height : 45px;
     background-color: hsl(0,0%,20%);
     border-radius: var(--br-5);
 }
 
-.facebook.footer-social{
-    background-color: hsl(246, 48%, 24%);
+.footer-social img{
+    width : 25px;
+    height: 25px;
 }
 
-.twitter.footer-social{
-    background-color: hsl(202, 75%, 38%);
+.whatsapp.footer-social{
+    background-color: hsl(128, 83%, 34%);
 }
 
-.instagram.footer-social{
-    background-color: hsl(337, 81%, 45%);
-}
-
-.pinterest.footer-social{
-    background-color: hsl(350, 92%, 46%);
-}
-
-.youtube.footer-social{
+.mail.footer-social{
     background-color: hsl(9, 97%, 39%);
 }
 
@@ -930,7 +974,7 @@ main section{
         display: none;
     }
 
-    .donate-link{
+    .subscribe-link{
         margin : 0 10px 0 auto;
     }
 
@@ -957,6 +1001,9 @@ main section{
 
     .content{
         width : 100%;
+    }
+
+    .banner-section .content{
         text-align: center;
     }
 
@@ -1024,8 +1071,16 @@ main section{
 }
 
 @media(max-width: 900px){
-    .blog{
+    .officials{
         width : 100%;
+    }
+
+    /* .info-section .wrapper.flex-wrap{
+        justify-content: space-between;
+    } */
+
+    .footer-quick-link{
+        align-items: flex-start;
     }
 }
 
@@ -1040,7 +1095,7 @@ main section{
     }
 
 
-    .donate-link{
+    .subscribe-link{
         padding: 5px 10px;
         margin: 0 10px 0 auto;
         border-radius: var(--br-5);
